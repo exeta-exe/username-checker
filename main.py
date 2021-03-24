@@ -2,8 +2,7 @@ import os
 import requests
 from colorama import Fore
 import easygui
-
-
+import time
 
 def username():
     file = open("usernames.txt", "r")
@@ -56,4 +55,6 @@ while True:
         print(Fore.GREEN + "[AVAILABLE] {}".format(line))
     else:
         print(Fore.WHITE + "[UNUSABLE] {}".format(line))
-
+        
+time.sleep(25)
+exit()
